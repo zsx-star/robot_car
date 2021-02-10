@@ -1,7 +1,0 @@
-<!-- -->
-<launch>
-        <param name="robot_description"
-        textfile="$(find little_car)/urdf/car01.urdf"/>
-        <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
-		<node name="rviz" pkg="rviz" type="rviz" args="-d $(find little_car)/rviz/car01.rviz" respawn="false" output="screen"/>
-</launch>
