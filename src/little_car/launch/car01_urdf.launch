@@ -1,0 +1,9 @@
+<!-- -->
+<launch>
+		<!-- 加载机器人模型参数（机器人模型路径保存在robot_description变量中，后续访问这个变量就可以获取该路径） -->
+        <param name="robot_description" textfile="$(find little_car)/urdf/car01.urdf"/>
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+        <!-- 运行robot_state_publisher节点，发布tf坐标系变换  -->
+        
+		<node name="rviz" pkg="rviz" type="rviz" args="-d $(find little_car)/rviz/car01.rviz" respawn="false" output="screen"/>
+</launch>
