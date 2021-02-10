@@ -1,0 +1,5 @@
+<!-- -->
+
+<launch>
+	<node name="car_state_publisher" pkg="smartcar_cmd" type="car_state_publisher"/>
+</launch>
